@@ -1,7 +1,8 @@
 package com.alurachallengeirandis;
 
 public class EntradaDelUsuario implements ConvertirMonedaOTemperatura {
-	private double recibidoInput = 0;
+	private double recibidoInput;
+	double total;
 
 	// set user input here
 	public EntradaDelUsuario(double recibidoInput) {
@@ -10,76 +11,91 @@ public class EntradaDelUsuario implements ConvertirMonedaOTemperatura {
 
 	@Override
 	public double convertirMoneda(String convertirDe, String convertirA) {
-		double total = 0;
 		if (convertirDe == "RD") {
 			// Valor en RD de 1 de las siguientes monedas
 			double dolar = 0.018;// dominican pesos
 			double mexico = 0.33;// dominican pesos
-			double korea = 23.45;// dominican pesos
+			double korea = 24.03;// dominican pesos
+			double rd = 1.0;
 			if (convertirA == "US") {
 				total = recibidoInput * dolar;
-				System.out.println(total + " De RD a US");
+				System.out.println(total + " Dolares Americanos");
 			}
 			if (convertirA == "MX") {
 				total = recibidoInput * mexico;
-				System.out.println(total + " De RD a Peso Mexicano");
+				System.out.println(total + " Pesos Mexicanos");
 			}
 			if (convertirA == "KRW") {
 				total = recibidoInput * korea;
-				System.out.println(total + " De RD a Won Koreano");
+				System.out.println(total + " Won Koreano");
+			}if (convertirA == "RD") {
+				total = recibidoInput * rd;
+				System.out.println(total + " Pesos Dominicanos");
 			}
 		}
 		if (convertirDe == "US") {
 			// Valor de 1 US en las siguientes monedas
-			double dominicano = 55.56;// dominican peso
-			double mexico = 17.98;// mexican peso
-			double korea = 1295.78;// won coreano
+			double dominicano = 55.10;// dominican peso
+			double mexico = 18.09;// mexican peso
+			double korea = 1324.51;// won coreano
+			double us = 1.0;
 			if (convertirA == "RD") {
 				total = recibidoInput * dominicano;
-				System.out.println(total + " De US a RD");
+				System.out.println(total + " Pesos Dominicanos");
 			}
 			if (convertirA == "MX") {
 				total = recibidoInput * mexico;
-				System.out.println(total + " De US a Peso Mexicano");
+				System.out.println(total + " Pesos Mexicanos");
 			}
 			if (convertirA == "KRW") {
 				total = recibidoInput * korea;
-				System.out.println(total + " De US a Won Koreano");
+				System.out.println(total + " Won Koreano");
+			}if (convertirA == "US") {
+				total = recibidoInput * us;
+				System.out.println(total + " Dolares Americanos");
 			}
 		}
 		if (convertirDe == "MX") {
 			// Valor de 1 MX en las siguientes monedas
-			double dominicano = 3.09;// dominican pesos
-			double dolar = 0.056;// american dolars
-			double korea = 72.06;// won coreano
+			double dominicano = 3.05;// dominican pesos
+			double dolar = 0.055;// american dolars
+			double korea = 73.23;// won coreano
+			double mx = 1.0;
 			if (convertirA == "US") {
 				total = recibidoInput * dolar;
-				System.out.println(total + " De MX a US");
+				System.out.println(total + " Dolares Americanos");
 			}
 			if (convertirA == "RD") {
 				total = recibidoInput * dominicano;
-				System.out.println(total + " De MX a Dominicano");
+				System.out.println(total + " Pesos Dominicanos");
 			}
 			if (convertirA == "KRW") {
 				total = recibidoInput * korea;
-				System.out.println(total + " De MX a Won Koreano");
+				System.out.println(total + " Won Koreano");
+			}if (convertirA == "MX") {
+				total = recibidoInput * mx;
+				System.out.println(total + " Pesos Mexicano");
 			}
 		}
 		if (convertirDe == "KRW") {
-			double dominicano = 0.043;
-			double dolar = 0.00077;
+			double dominicano = 0.042;
+			double dolar = 0.00076;
 			double mexico = 0.014;// mexican pesos
+			double krw = 1.0;
 			if (convertirA == "US") {
 				total = recibidoInput * dolar;
-				System.out.println(total + " De KRW a US");
+				System.out.println(total + " Dolares Americanos");
 			}
 			if (convertirA == "MX") {
 				total = recibidoInput * mexico;
-				System.out.println(total + " De KRW a Peso Mexicano");
+				System.out.println(total + " Pesos Mexicano");
 			}
 			if (convertirA == "RD") {
 				total = recibidoInput * dominicano;
-				System.out.println(total + " De KRW a Dominicano");
+				System.out.println(total + " Pesos Dominicanos");
+			}if (convertirA == "KRW") {
+				total = recibidoInput * krw;
+				System.out.println(total + " Won Koreano");
 			}
 		}
 		return total;
@@ -87,7 +103,6 @@ public class EntradaDelUsuario implements ConvertirMonedaOTemperatura {
 
 	@Override
 	public double convertirTemperatura(String convertirDe, String convertirA) {
-		double total = 0;
 		double celciusToFan = (1.8 * recibidoInput) + 32;
 		double farenheitToCel = (recibidoInput - 32) * 0.5556;
 		if (convertirDe == "Farenheit") {
