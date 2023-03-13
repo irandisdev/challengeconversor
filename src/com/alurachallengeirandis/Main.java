@@ -58,7 +58,7 @@ public class Main extends EntradaDelUsuario {
 		JLabel lblConvertirA = new JLabel();
 		JLabel footer = new JLabel();
 		JPanel cuadro4 = new JPanel();
-		JLabel resultadoConvertido = new JLabel();
+		JTextArea resultadoConvertido = new JTextArea();
 
 		// cuadro1
 		cuadro1.setBackground(new Color(0x32, 0x32, 0x5b));
@@ -178,9 +178,16 @@ public class Main extends EntradaDelUsuario {
 						double totalConvertido = inputConversion.total;
 						resultadoConvertido.setText("" + totalConvertido + " \nDe " + convertirDeTemperatura + " A "
 								+ convertirATemperatura);
-						resultadoConvertido.setForeground(Color.BLACK);
-						resultadoConvertido.setBounds(25, 300, 230, 20);
+						resultadoConvertido.setForeground(Color.white);
+						resultadoConvertido.setBounds(65, 300, 125, 100);
+						resultadoConvertido.setBackground(null);
 						resultadoConvertido.setFont(new Font("Roboto", Font.BOLD, 18));
+						resultadoConvertido.setLineWrap(true);
+						resultadoConvertido.setWrapStyleWord(true);
+						JScrollPane scrollPaneResult = new JScrollPane(resultadoConvertido);
+						scrollPaneResult.setBorder(null);
+						scrollPaneResult.setPreferredSize(new Dimension(125, 100));
+						cuadro1.add(scrollPaneResult);
 						cuadro1.add(resultadoConvertido);
 						cuadro1.revalidate();
 						cuadro1.repaint();
@@ -218,9 +225,16 @@ public class Main extends EntradaDelUsuario {
 						double totalConvertido = inputConversion.total;
 						resultadoConvertido.setText(
 								"$" + totalConvertido + " \nDe " + convertirDeMoneda + " A " + convertirAMoneda);
-						resultadoConvertido.setForeground(Color.BLACK);
-						resultadoConvertido.setBounds(25, 300, 230, 20);
+						resultadoConvertido.setForeground(Color.white);
+						resultadoConvertido.setBounds(65, 300, 200, 100);
+						resultadoConvertido.setBackground(null);
 						resultadoConvertido.setFont(new Font("Roboto", Font.BOLD, 18));
+						resultadoConvertido.setLineWrap(true);
+						resultadoConvertido.setWrapStyleWord(true);
+						JScrollPane scrollPaneResult = new JScrollPane(resultadoConvertido);
+						scrollPaneResult.setBorder(null);
+						scrollPaneResult.setPreferredSize(new Dimension(125, 100));
+						cuadro1.add(scrollPaneResult);
 						cuadro1.add(resultadoConvertido);
 						cuadro1.revalidate();
 						cuadro1.repaint();
@@ -246,10 +260,11 @@ public class Main extends EntradaDelUsuario {
 				String texto = nombre.getText();
 				menu.setVisible(false);
 				saludos.setText("¡Hey, " + texto + "! Vamos a convertir.");
+				saludos.setForeground(Color.white);
 				nombre.setEditable(false);
 				nombre.setBackground(new Color(0x32, 0x32, 0x5b));
 				nombre.setForeground(Color.white);
-				cuadroSaludos.setBackground(Color.white);
+				cuadroSaludos.setBackground(new Color(0x40, 0x40, 0x94));
 				cuadro1.add(cuadroSaludos);
 				lblIngresaTuNombre.setText("Tu nombre es:");
 				lblIngresaTuNombre.setBounds(30, 12, 118, 20);
@@ -293,21 +308,21 @@ public class Main extends EntradaDelUsuario {
 		textarea.setLineWrap(true);
 		textarea.setWrapStyleWord(true);
 		textarea.setText(
-				"\nEste es nuestro sistema de conversión de divisas. \n\nOfrecemos una solución fácil y segura para convertir el Peso Dominicano, Peso Mexicano, Dólares Americanos y Won Surcoreano. Simplemente seleccione las monedas que desea convertir y nuestro sistema mostrará la tasa de cambio actual y la cantidad de moneda que recibirá en la moneda deseada.\n"
+				"\nHola a todos, este es nuestro sistema de conversión de divisas. \n\nOfrecemos una solución fácil y segura para convertir Monedas del Peso Dominicano, Peso Mexicano, Dólares Americanos y Won Surcoreano; tambien temperatura de Farenheit y Celcius. Simplemente seleccione las monedas que desea convertir y nuestro sistema mostrará la tasa de cambio actual y la cantidad de moneda que recibirá en la moneda deseada.\n"
 						+ "\n"
 						+ "Utilizamos un algoritmo sólido y confiable que tiene en cuenta los últimos datos de tipos de cambio de fuentes confiables para proporcionar tasas de cambio precisas y actualizadas en tiempo real. Además, nos preocupamos por la seguridad de nuestros usuarios, por lo que nuestro sistema utiliza protocolos de encriptación estándar de la industria para proteger su información personal y financiera.\n"
 						+ "\n"
-						+ "Nuestro sitio web también cuenta con una guía de viajes completa que proporciona información útil sobre el intercambio de moneda, las costumbres locales y otros temas relacionados con los viajes.\n"
+						+ "Irandis Ditren es el desarrollador responsable de hacer que este conversor de monedas y temperatura exista. Gracias al reto propuesto por Alura LATAM junto a Oracle Next Education.\n"
 						+ "\n"
 						+ "Estamos comprometidos con brindar a nuestros usuarios la mejor experiencia posible y ofrecemos soporte al cliente las 24 horas del día, los 7 días de la semana para responder cualquier pregunta o inquietud que pueda tener. Ya sea que viaje o haga negocios internacionalmente, nuestro sistema de conversión de divisas le brinda las herramientas y recursos que necesita para tener éxito."
 						+ "\n" + "\nDeveloped by Irandis Dev - Alumni One\n");
-		textarea.setFont(new Font("Lato", Font.BOLD, 14));
+		textarea.setFont(new Font("Comic Sans", Font.ROMAN_BASELINE, 12));
 		JScrollPane scrollPane = new JScrollPane(textarea);
 		scrollPane.setBorder(null);
 		scrollPane.setPreferredSize(new Dimension(300, 490));
 		cuadro2.add(scrollPane);
 		cuadro2.setSize(375, 500);
-		cuadro2.setLocation(290, 0);
+		cuadro2.setLocation(255, 0);
 		cuadro2.setBackground(Color.white);
 		frame.add(cuadro2);
 
