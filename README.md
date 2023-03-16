@@ -2,7 +2,8 @@
   <img src="https://user-images.githubusercontent.com/9090903/225730781-b446b875-1e27-4d11-99cb-f079098765a4.png">
 </p>
 
-
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/irandisdev/challengeconversor)
+![GitHub followers](https://img.shields.io/github/followers/irandisdev?style=social)
 
 <h3 align="center">Hola todos, <br>mi nombre es Irandis Ditren de Republica Dominicana <br>y esta es mi propuesta del reto conversor de monedas, <br>para alura latam.</h3>
 
