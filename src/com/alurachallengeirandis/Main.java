@@ -175,8 +175,8 @@ public class Main extends EntradaDelUsuario {
 						String convertirATemperatura = (String) convertirADropdownTemp.getSelectedItem();
 						EntradaDelUsuario inputConversion = new EntradaDelUsuario(entradaAConvertir);
 						inputConversion.convertirTemperatura(convertirDeTemperatura, convertirATemperatura);
-						double totalConvertido = inputConversion.total;
-						resultadoConvertido.setText("" + totalConvertido + " \nDe " + convertirDeTemperatura + " A "
+						String totalConvertido = inputConversion.total;
+						resultadoConvertido.setText("" + totalConvertido + " \n\nConvertido De: \n" + convertirDeTemperatura + " A "
 								+ convertirATemperatura);
 						resultadoConvertido.setForeground(Color.white);
 						resultadoConvertido.setBounds(65, 300, 125, 100);
@@ -222,18 +222,18 @@ public class Main extends EntradaDelUsuario {
 						EntradaDelUsuario inputConversion = new EntradaDelUsuario(entradaAConvertir);
 						inputConversion.convertirMoneda(convertirDeMoneda, convertirAMoneda);
 
-						double totalConvertido = inputConversion.total;
+						String totalConvertido = inputConversion.total;
 						resultadoConvertido.setText(
-								"$" + totalConvertido + " \nDe " + convertirDeMoneda + " A " + convertirAMoneda);
+								"$" + totalConvertido + " \n\nConvertido De: \n" + convertirDeMoneda + " A " + convertirAMoneda);
 						resultadoConvertido.setForeground(Color.white);
-						resultadoConvertido.setBounds(65, 300, 200, 100);
+						resultadoConvertido.setBounds(65, 300, 180, 120);
 						resultadoConvertido.setBackground(null);
-						resultadoConvertido.setFont(new Font("Roboto", Font.BOLD, 18));
+						resultadoConvertido.setFont(new Font("Roboto", Font.BOLD, 14));
 						resultadoConvertido.setLineWrap(true);
 						resultadoConvertido.setWrapStyleWord(true);
 						JScrollPane scrollPaneResult = new JScrollPane(resultadoConvertido);
 						scrollPaneResult.setBorder(null);
-						scrollPaneResult.setPreferredSize(new Dimension(125, 100));
+						scrollPaneResult.setPreferredSize(new Dimension(180, 120));
 						cuadro1.add(scrollPaneResult);
 						cuadro1.add(resultadoConvertido);
 						cuadro1.revalidate();
