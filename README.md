@@ -2,12 +2,19 @@
   <img src="https://user-images.githubusercontent.com/9090903/225730781-b446b875-1e27-4d11-99cb-f079098765a4.png">
 </p>
 
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/irandisdev/challengeconversor)
-![GitHub followers](https://img.shields.io/github/followers/irandisdev?style=social)
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/irandisdev/challengeconversor">
+</p>
 
-<h3 align="center">Hola todos, <br>mi nombre es Irandis Ditren de Republica Dominicana <br>y esta es mi propuesta del reto conversor de monedas, <br>para alura latam.</h3>
+<p align="center">
+  <img src="https://img.shields.io/github/followers/irandisdev?style=social">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fiamirandis">
+</p>
+<h3 align="center">Hola todos, <br>esta es mi propuesta del reto conversor de monedas, <br>para alura latam.</h3>
 
-#### 1. No utilizamos un API:
+### 1. No utilizamos un API:
 > Solo creamos la logica con las herramientas que hemos aprendido hasta ahora, una interfaz con los metodos a personalizas y una clase padre que nos ayuda imolementando la interfaz y extendiendo la logica a continuacion en los botones correspondientes.
 
 <p align="center">
@@ -42,8 +49,13 @@
 <img width="253" alt="SeleccionTempPic" src="https://user-images.githubusercontent.com/9090903/225730821-4e758da9-7cd4-466e-8e82-111720b6c190.png">
 </p>
 
+> Nota: Los `botones` se habilitaran, siempre y cuando concuerde con su seleccion.
+
+
 ### 4. Revise el resultado de su conversion:
 
 <p align="center">
-<img width="253" alt="ConvertidoTemp" src="https://user-images.githubusercontent.com/9090903/225730810-22109c45-564c-4b06-84dc-067c1685bae1.png"> <img width="250" alt="ConvertidoMon" src="https://user-images.githubusercontent.com/9090903/225730817-c985f457-9193-4708-8146-bb783f06df4e.png">
+<img width="250" alt="ConvertidoMon" src="https://user-images.githubusercontent.com/9090903/225730817-c985f457-9193-4708-8146-bb783f06df4e.png">
+<img width="253" alt="ConvertidoTemp" src="https://user-images.githubusercontent.com/9090903/225730810-22109c45-564c-4b06-84dc-067c1685bae1.png"> 
 </p>
+
