@@ -19,7 +19,7 @@
 </p>
 
 ### 1. No utilizamos un API:
-> Solo creamos la logica con las herramientas que hemos aprendido hasta ahora, una interfaz con los metodos a personalizas y una clase padre que nos ayuda imolementando la interfaz y extendiendo la logica a continuacion en los botones correspondientes.
+> Solo creamos la logica con las herramientas que hemos aprendido hasta ahora, una interfaz con los metodos a personalizar y una clase padre que nos ayuda implementando la interfaz y extendiendo la logica a continuacion en los botones correspondientes.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/9090903/225732089-8697fd60-9b6c-4e09-b892-951653b88b72.png">
@@ -63,3 +63,6 @@
 <img width="253" alt="ConvertidoTemp" src="https://user-images.githubusercontent.com/9090903/225730810-22109c45-564c-4b06-84dc-067c1685bae1.png"> 
 </p>
 
+# Gracias especiales a:
+### [Alura](http://aluracursos.com/)
+### [Oracle Next Education](https://www.oracle.com/lad/education/oracle-next-education/)
