@@ -13,6 +13,10 @@
   <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fiamirandis">
 </p>
 <h3 align="center">Hola todos, <br>esta es mi propuesta del reto conversor de monedas, <br>para alura latam.</h3>
+<p align="center">
+  <video src="https://user-images.githubusercontent.com/9090903/225792813-a7ab65b9-3e12-48f4-aa54-f875530f5740.mp4" width="auto" height="auto" style="margin: 0 auto" controls>
+  </video>
+</p>
 
 ### 1. No utilizamos un API:
 > Solo creamos la logica con las herramientas que hemos aprendido hasta ahora, una interfaz con los metodos a personalizas y una clase padre que nos ayuda imolementando la interfaz y extendiendo la logica a continuacion en los botones correspondientes.
